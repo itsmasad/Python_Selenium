@@ -35,7 +35,7 @@ WebDriverWait(driver, 5).until(
 
 # Its gonna search if the text "Muhammad Asad" is presence in any kind of link
 link = driver.find_element(By.PARTIAL_LINK_TEXT, "Muhammad Asad")
-link.click
+link.click()
 
 time.sleep(5)
 
