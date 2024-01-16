@@ -26,6 +26,7 @@ input_field = driver.find_element(By.CLASS_NAME, "gLFyf")
 # Clear the input field
 input_field.clear()
 
+# Typing in search bar and clicking enter
 input_field.send_keys("Muhammad Asad" + Keys.ENTER)
 
 # wait untill the element arrives
