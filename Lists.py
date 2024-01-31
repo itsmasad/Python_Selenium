@@ -40,5 +40,9 @@ print(fruits)
 fruits.sort()
 print(fruits)
 
+# Sorting reverse
 fruits.sort(reverse=True)
 print(fruits)
+
+
+print(type(number2))
