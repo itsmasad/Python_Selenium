@@ -12,7 +12,9 @@ driver.get("https://orteil.dashnet.org/cookieclicker/")
 
 # initializing the id
 Cookie_id = "bigCookie"
-
+cookies_id = "cookies"
+product_price_prefix = "productPrice"
+product_prefix = "product"
 # wait untill the language to arrives
 WebDriverWait(driver, 5).until(
     EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'English')]"))
@@ -29,11 +31,17 @@ WebDriverWait(driver, 15).until(
 
 # Clicking the cookie
 Cookie = driver.find_element(By.ID, Cookie_id)
-Cookie.click()
 
 
 # Wait for 10 seconds
 time.sleep(10)
+
+
+while True:
+    Cookie.click()
+    cookies_count = driver.find_element(By.ID, cookies_id).text.split(" ")[0]
+    cookies_count = int(cookies_count.replace(",", ""))
+    print(cookies_count)
 
 # Closes the instance
 driver.quit
