@@ -47,3 +47,18 @@ if not(x == y):
     print(f'{x} is not equal to {y}',': logical operator (Not) condition')  
 
 # Membership Operators (not, not in) - Membership operators are used to test if a sequence is presented in an object
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+z = 7
+a = 13
+# in
+if z in numbers:
+    print(z in numbers, ': in condition')
+
+# not in
+if a not in numbers:
+    print(a not in numbers, ': not in condition')
+
+  
+
+# Identity Operators (is, is not) - Compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
