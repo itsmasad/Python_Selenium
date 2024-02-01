@@ -24,3 +24,8 @@ print(num)
 
 # A lambda function is a small anonymous function
 # A lambda function can take any number of arguments, but can only have one expression. Very similar to JS arrow functions
+# 'getSumlambda' is a funtion name
+# 'lambda num1, num2' is telling that if will accept the parameteres 
+# ': num1 + num2' is thie main functionality
+getSumlambda = lambda num1, num2 : num1 + num2
+print(getSumlambda(10,2))
