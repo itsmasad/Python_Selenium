@@ -35,3 +35,15 @@ print('Apples' in fruits_set)
 # Add to set
 fruits_set.add('Grape')
 print(fruits_set)
+
+# Remove from set
+fruits_set.remove('Grape')
+print(fruits_set)
+
+# Clearing set
+fruits_set.clear()
+print(fruits_set)
+
+# Deleting set
+del fruits_set
+print(fruits_set)
