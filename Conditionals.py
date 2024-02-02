@@ -59,6 +59,14 @@ if z in numbers:
 if a not in numbers:
     print(a not in numbers, ': not in condition')
 
-  
 
 # Identity Operators (is, is not) - Compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+    b = 10
+    c = 10
+
+    # is
+    if b is c:
+        print(b is c, ': is condition')
+
+    if x is not y:
+        print(b is not c, ': is not condition')
