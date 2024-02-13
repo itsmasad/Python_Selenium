@@ -19,4 +19,7 @@ timestamp = time.time()
 print(timestamp)
 
 # Pip Modules
-import camelcase
+from camelcase import CamelCase
+
+c = CamelCase()
+print(c.hump('hello there world'))
