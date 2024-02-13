@@ -8,6 +8,31 @@ class User:
         self.email = email
         self.age = age
 
-# Init
+    def greeting(self):
+        return f'My name is {self.name} and I am {self.age} and my balance is {self.balance}'
+    
+    def has_birthday(self):
+        self.age += 1
+
+
+class Customer(User):
+    # Constructor
+    def __init__(self, name, email, age):
+        self.name = name
+        self.email = email
+        self.age = age
+        self.balance = 0
+
+    def set_balance(self, balance):
+        self.balance = balance
+
+# Init customer object
+janet = Customer('Janet Johnson', 'janet@yahoo.com', 25)
+
+janet.set_balance(500)
+
+# Init user object
 brad = User('Brad Traversy', 'brad@gmail.com', 37)
-print('Asad')
+
+brad.has_birthday()
+print(brad.greeting())
