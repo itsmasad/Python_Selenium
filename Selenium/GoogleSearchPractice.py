@@ -10,7 +10,6 @@ from selenium.webdriver.support import expected_conditions as EC
 # Path to the ChromeDriver executable
 # chrome_driver_path = 'C:\\Users\\Asad\\Desktop\\Python Selenium\\chromedriver.exe'
 
-
 # Create a new instance of the Chrome driver
 driver = webdriver.Chrome()
 
